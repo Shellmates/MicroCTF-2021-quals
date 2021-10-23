@@ -1,0 +1,30 @@
+name: "RSA4"
+author: "haithem_lamri"
+author_link: "https://github.com/HaithemLamri"
+
+category: crypto
+difficulty: medium
+
+description: |
+  > So using a prime as a modulus was a mistake, I forgot Fermat's little theorem, but there is no way to find the flag if I squared my prime!  
+  > Or there is!??  
+  
+  **Author** : haithem_lamri
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{u53_Di57inc7_Prim3_Numb3r5}
+
+files:
+  - ./RSA4.txt
+ 
+state: visible
+
+version: "0.1"

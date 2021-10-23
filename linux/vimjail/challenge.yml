@@ -1,0 +1,32 @@
+name: "vimjail"
+author: "hfz1337"
+author_link: "https://github.com/hfz1337"
+
+category: linux
+difficulty: medium
+
+description: |
+  > Find and read the flag in the file system.  
+
+  **Password:** prisoner  
+
+  **Author:** hfz1337
+
+connection_info: ssh -p 6004 prisoner@linux.ctf.microclub.net
+
+image: gcr.io/i-pivot-325521/vimjail
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{0n3_st3p_cl0s3r_t0_b3c0m1ng_a_v1m_3l1tist?}
+
+state: visible
+
+version: "0.1"

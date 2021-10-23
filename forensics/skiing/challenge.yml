@@ -1,0 +1,34 @@
+name: "skiing"
+author: "GZLI"
+author_link: "https://github.com/Elghazali-99"
+
+category: forensics
+difficulty: medium
+
+description: |
+  > Our Club's designer -Bob- was acting weird past days.. Our HR team finds out that he was 'somehow' hiding some secrets in our Github repository!
+  > but they cannot find anything! just some Logos and a page cover, after i called Bob to meet him asap he said:" hey Boss, i'm so sorry.. it is snowing outside!
+  > So i'm going For Skiing, i can't miss this chance! the most important thing in skiing is you have to be having fun. If you’re having fun, then everything else will come easy to you. *Call ended*"  
+  
+  > ouff... i can't wait.. so i want you to catch him! i'm wondering how a designer could hide a secret!.  
+
+  **Author** : GZLI
+flags:
+  - shellmates{sn0w_is_th3_wint3r_v3rsi0n_0f_st3g4n0}
+
+files:
+  - ./Design.rar
+
+hints:
+  - "We can't crack the file password, Bob is probably using a strong password but it's 'somehow' hidden"
+
+# DO NOT CHANGE
+#
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 50
+state: visible
+version: "0.1"

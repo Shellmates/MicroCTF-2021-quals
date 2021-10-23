@@ -1,0 +1,37 @@
+name: "darkness 1"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: linux
+difficulty: medium
+
+description: |
+  > I can't see more than the exit codes!  
+
+  Find out which commands are available and try to get the flag  
+
+  **Flag format** : `shellmates{[0-9A-Za-z_]+}`  
+
+  **Author** : chenx3n
+
+connection_info: nc linux.ctf.microclub.net 6000
+
+image: gcr.io/i-pivot-325521/darkness-1
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{3X1t_c0D3S_ReV3aL_4_lotT4_1NFORmAt1On}
+
+files:
+  - shell.sh
+
+state: visible
+
+version: "0.1"

@@ -1,0 +1,33 @@
+name: "impossible"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: web
+difficulty: ezmed
+
+description: |
+  > Why even bother? It's basically impossible to get the flag  
+
+  **Author** : chenx3n
+
+connection_info: http://impossible.web.ctf.microclub.net
+
+image: gcr.io/i-pivot-325521/impossible
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{R3gEX_IN_NGinx_g03S_BrrrR}
+
+files:
+  - ./nginx.conf
+
+state: visible
+
+version: "0.1"

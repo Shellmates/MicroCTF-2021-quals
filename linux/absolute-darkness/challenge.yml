@@ -1,0 +1,35 @@
+name: "absolute darkness"
+author: "hfz1337"
+author_link: "https://github.com/hfz1337"
+
+category: linux
+difficulty: medhard
+
+description: |
+  > Nothing to see anymore... but now there's an interesting command you can use!  
+
+  **Flag format regex** : `shellmates{[0-9A-Za-z_]+}`  
+
+  **Author** : hfz1337
+
+connection_info: nc linux.ctf.microclub.net 6002
+
+image: gcr.io/i-pivot-325521/absolute-darkness
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{i_STilL_c4n_SEE}
+
+files:
+  - shell.sh
+
+state: visible
+
+version: "0.1"

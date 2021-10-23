@@ -1,0 +1,37 @@
+name: "$hellc0de 0x2"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: pwn
+difficulty: medium
+
+description: |
+  > I bet your first shellcode woudn't work here :)  
+
+  **Author** : chenx3n
+
+connection_info: nc pwn.ctf.microclub.net 5001
+
+image: gcr.io/i-pivot-325521/shellcode-2
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{op3N_rE4D_WritE_F0r_Th3_W1N}
+
+files:
+  - ./src/shellcode-2.c
+  - ./challenge/shellcode-2
+
+hints:
+  - What are syscalls? What is seccomp?
+
+state: visible
+
+version: "0.1"

@@ -1,0 +1,29 @@
+name: "layerZzz"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: forensics
+difficulty: medium
+
+description: |
+  > That's a lot of layers... where does it even stop??  
+
+  **Author** : chenx3n
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{CONGrATzZzz_U_d3FEa73d_a1l_Layer$!!!}
+
+files:
+  - ./layerZzz.tar.gz
+
+state: visible
+
+version: "0.1"

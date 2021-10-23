@@ -1,0 +1,31 @@
+
+name: "vault"
+author: "Hichem_Yagoubi"
+author_link: "https://github.com/hicham-yagoubi"
+
+category: reverse
+difficulty: ezmed
+
+description: |
+  > You are RIO, a member of the Money Heist team and a hacker,  
+  > The Professor gave you the mission to open the vault,  
+  > quickly there is no time!  
+
+  **Author** : Hichem_Yagoubi
+flags:
+  - shellmates{g00D_j0B_rIo_wE_h4Ve_Th3_m0N3Y}
+
+
+files:
+  - ./Vault.jar
+
+# DO NOT CHANGE
+#
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 15
+    minimum: 50
+state: visible
+version: "0.1"

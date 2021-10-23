@@ -1,0 +1,30 @@
+name: "hidden"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: linux
+difficulty: easy
+
+description: |
+  > Can you find the hidden flag ?  
+
+  **Password** : ctf  
+
+  **Author** : chenx3n
+
+connection_info: ssh -p 6007 ctf@linux.ctf.microclub.net
+
+image: gcr.io/i-pivot-325521/hidden
+
+value: 50
+type: standard
+
+flags:
+  - shellmates{hIdden_1n_pl4IN_S1GHt}
+
+tags:
+  - warmup
+
+state: visible
+
+version: "0.1"

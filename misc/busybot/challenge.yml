@@ -1,0 +1,32 @@
+name: "Busybot"
+author: "hfz1337"
+author_link: "https://github.com/hfz1337"
+
+category: misc
+difficulty: medium
+
+description: |
+  > Say hi to Busybot!  
+  > Our brand new discord bot which can do pretty much anything!  
+
+  Join our event's discord server to play with the bot :  
+  **Discord invite link** : https://discord.gg/mVkjpE58xj  
+
+  **Author** : hfz1337
+
+image: gcr.io/i-pivot-325521/busybot
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{BE_C4rEfu1L_W17H_3vAl_f0Lk$!!}
+
+state: visible
+
+version: "0.1"

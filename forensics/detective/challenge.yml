@@ -1,0 +1,30 @@
+name: "detective"
+author: "Hichem_Yagoubi"
+author_link: "https://github.com/hicham-yagoubi"
+
+category: forensics
+difficulty: medium
+
+description: |
+  > This image is the only evidence we have, we need the hacker's location.  
+
+  **Note** : the hacker's location is not the flag, dig more and you'll find a normal readable flag  
+
+  **Author** : Hichem_Yagoubi
+
+flags:
+  - shellmates{Good_JOb_d3t3cT1VE_H0Lm3s}
+
+files:
+  - ./hacker.jpg
+
+value: 500
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 15
+    minimum: 50
+
+state: visible
+version: "0.1"

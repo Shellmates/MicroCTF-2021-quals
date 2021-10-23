@@ -1,0 +1,35 @@
+name: "lottery"
+author: "hfz1337"
+author_link: "https://github.com/hfz1337"
+
+category: pwn
+difficulty: medhard
+
+description: |
+  > _Secure coding is hard, some bugs are really difficult to find
+  > even with the most advanced fuzzing techniques!_  
+  > Find a way to win the lottery and get the flag.  
+
+  **Author**: hfz1337
+
+connection_info: nc pwn.ctf.microclub.net 5003
+
+image: gcr.io/i-pivot-325521/lottery
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{d4ngl1ng_p01nt3rs_4r3_d4ng3r0us_my_dud3s}
+
+files:
+  - ./challenge/lottery
+
+state: visible
+
+version: "0.1"

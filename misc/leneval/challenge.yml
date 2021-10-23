@@ -1,0 +1,32 @@
+name: "leneval"
+author: "chenx3n"
+
+category: misc
+difficulty: medium
+
+description: |
+  > Can you leneval the flag out?  
+
+  **Author** : chenx3n
+
+connection_info: nc misc.ctf.microclub.net 4002
+
+image: gcr.io/i-pivot-325521/leneval
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{9e41e0dd1e4fbddbb00d35436b5379f9}
+
+files:
+  - ./challenge/challenge.py
+
+state: visible
+
+version: "0.1"

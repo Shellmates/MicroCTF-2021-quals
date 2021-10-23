@@ -1,0 +1,4 @@
+Hello there challenger !
+We're looking for a file which has a name that starts with "secret" and ends with b64 extension.
+Can you **find** it ??
+Flag format : shellmates{}

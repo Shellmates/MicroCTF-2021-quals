@@ -1,0 +1,33 @@
+name: "serializer"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: web
+difficulty: ezmed
+
+description: |
+  > A web serializer !  
+
+  **Author :** chenx3n
+
+connection_info: http://serializer.web.ctf.microclub.net
+
+image: gcr.io/i-pivot-325521/serializer
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{Check_OUt_My_SeCUr3_S3RiAlIZ3R_nEXt}
+
+files:
+  - files/app.zip
+
+state: visible
+
+version: "0.1"

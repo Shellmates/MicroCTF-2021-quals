@@ -1,0 +1,29 @@
+name: "RSA3"
+author: "haithem_lamri"
+author_link: "https://github.com/HaithemLamri"
+
+category: crypto
+difficulty: medium
+
+description: |
+  > Making N large or small won't ensure the security of my public key, so what about using a prime number, could you find the flag in this case?!  
+  
+  **Author** : haithem_lamri
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{N_5h0uld_B3_4_Pr0duct_of_7w0_Prim35}
+
+files:
+  - ./RSA3.txt
+
+state: visible
+
+version: "0.1"

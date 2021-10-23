@@ -1,0 +1,31 @@
+name: "secret agent"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: web
+difficulty: easy
+
+description: |
+  > Only super secret agents allowed
+
+  **Author** : chenx3n
+
+connection_info: http://secret-agent.web.ctf.microclub.net  
+
+image: gcr.io/i-pivot-325521/secret-agent
+
+value: 50
+type: standard
+
+flags:
+  - shellmates{$uuUuUUP3r_S3CR37_aG3Nt}
+
+files:
+  - ./nginx.conf
+
+tags:
+  - warmup
+
+state: visible
+
+version: "0.1"

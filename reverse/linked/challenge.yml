@@ -1,0 +1,35 @@
+name: "linked"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: reverse
+difficulty: medium
+
+description: |
+  > My friend started studying computer science, 
+  > so he wouldn't stop talking about data structures.  
+  > Now he challenged me to a reverse engineering challenge 
+  > involving some kind of data structure.  
+  > He gave me a binary containing a fake flag and a memory dump of the heap.  
+  > Can you help me get the flag !?  
+
+  **Author** : chenx3n
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{U_SuRelY_d1DNT_SK1P_TH3_l1NKeD_list_CLa$$}
+
+files:
+  - ./files/linked
+  - ./files/23797_mem_55e44a780000-55e44a7813b0.bin
+
+state: visible
+
+version: "0.1"

@@ -1,0 +1,32 @@
+name: "well-chosen"
+author: "Ouxs"
+author_link: "https://github.com/ouxs-19"
+
+category: programming
+difficulty: medhard
+
+description: |
+  > Automation alone is not enough, everything must be optimised.  
+
+  **Author** : Ouxs
+
+connection_info: nc prog.ctf.microclub.net 9000
+
+image: gcr.io/i-pivot-325521/well-chosen
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{I_H0p3_yoU_Wrot3_ThE_5CR1P7}
+
+tags:
+  - optimization
+
+state: visible
+version: "0.1"

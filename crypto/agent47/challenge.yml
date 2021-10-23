@@ -1,0 +1,31 @@
+name: "agent47"
+author: "Bl4ckBe4rd"
+author_link: "https://github.com/muhammedBkf"
+
+category: crypto
+difficulty: easy
+
+description: |
+  > We intercepted this discussion between agent47 and his boss.  
+  > Can you find out what they are talking about?  
+  
+  **Author** : Bl4ckBe4rd
+
+value: 50
+type: standard
+
+flags:
+  - shellmates{r0t47_15_Ju5T_L1k3_r0t13}
+
+hints:
+  - "There's not just rot13 ;)"
+
+files:
+  - ./message
+
+tags:
+  - warmup
+
+state: visible
+
+version: "0.1"

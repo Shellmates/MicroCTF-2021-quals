@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+
+  bot:
+    build: .
+    image: gcr.io/i-pivot-325521/busybot
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      resources:
+        limits:
+          memory: 100M

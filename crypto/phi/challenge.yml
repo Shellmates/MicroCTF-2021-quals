@@ -1,0 +1,31 @@
+name: "phi"
+author: "MohamedGouaouri"
+author_link: "https://github.com/MohamedGouaouri"
+
+category: crypto
+difficulty: easy
+
+description: |
+  > I'm learning how to encrypt with RSA algorithm, 
+  > but I can't remember if phi should be kept secret or not  
+
+  **Author** : MohamedGouaouri
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{Ph1_Must_b3_K3pT_s3Cr3t}
+
+files:
+  - ./source.py
+  - ./out
+
+state: visible
+
+version: "0.1"

@@ -1,0 +1,33 @@
+name: "ECBC"
+author: "haithem_lamri"
+author_link: "https://github.com/HaithemLamri"
+
+category: crypto
+difficulty: medhard
+
+description: |
+  > AES has a lot of modes, but combining those modes can make a beautiful vulnerability!!  
+
+  **Author** : haithem_lamri
+
+connection_info: nc crypto.ctf.microclub.net 7000
+
+image: gcr.io/i-pivot-325521/ecbc
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{_d0n7_C0mb1n3_M0de5_}
+
+files:
+  - challenge/challenge.py
+
+state: visible
+
+version: "0.1"

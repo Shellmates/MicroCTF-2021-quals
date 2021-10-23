@@ -1,0 +1,28 @@
+name: "EncryptedKey"
+author: "Bl4ckBe4rd"
+
+category: reverse
+difficulty: easy
+
+description: |
+  > You won't find the secret key in this binary. I encrypted it myself. Can you still recover it?  
+
+  **Author** : Bl4ckBe4rd
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{ju5t_xor_th3_adj4c3nts}
+
+files:
+  - ./chal 
+
+state: visible
+
+version: "0.1"

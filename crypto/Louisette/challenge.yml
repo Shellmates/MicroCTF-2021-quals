@@ -1,0 +1,33 @@
+name: Louisette
+author: Nesrine
+author_link: "https://github.com/CherrabiNesrine"
+
+category: crypto
+difficulty: easy
+
+description: |
+  > When I was cleaning my grandmother's room, I found this letter.  
+  > Read it for me, and you're gonna have your flag.  
+  > Hint: My grandmother's name is Louisette.  
+
+  **Flag format** : microctf{.*}  
+
+  **Author** : Nesrine
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - microctf{that_wa5_simple_crypt0_ch1ng}
+
+files:
+  - ./secretletter.txt  
+
+state: visible
+
+version: "0.1"

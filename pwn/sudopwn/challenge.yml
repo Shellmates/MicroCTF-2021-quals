@@ -1,0 +1,33 @@
+name: "sudopwn"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: pwn
+difficulty: medhard
+
+description: |
+  > Check out my Sudoku console game !  
+
+  **Author** : chenx3n
+
+connection_info: nc pwn.ctf.microclub.net 5004  
+
+image: gcr.io/i-pivot-325521/sudopwn
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{th3_WH0lE_4ddre$s_sP4c3_Is_4_sUD0kU_b0aRD!!!}
+
+files:
+  - ./files/sudopwn.zip
+
+state: visible
+
+version: "0.1"

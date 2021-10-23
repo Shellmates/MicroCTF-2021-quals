@@ -1,0 +1,27 @@
+name: "untar me 100"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: programming
+difficulty: easy
+
+description: |
+  > I archived the flag using `tar` a 100 times, 
+  > can you retrieve it for me ?!  
+
+  **Author** : chenx3n
+
+value: 50
+type: standard
+
+flags:
+  - shellmates{woW_u_Re_N0T_4_SCr1pT_K1Dd13}
+
+files:
+  - challenge/archive.tar.gz
+
+tags:
+  - warmup
+
+state: visible
+version: "0.1"

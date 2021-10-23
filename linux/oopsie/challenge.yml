@@ -1,0 +1,33 @@
+name: "oopsie"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: linux
+difficulty: medium
+
+description: |
+  > I just wanna say Hi but I think I made a little oopsie...  
+
+  **Author** : chenx3n
+
+connection_info: nc linux.ctf.microclub.net 6005
+
+image: gcr.io/i-pivot-325521/oopsie
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{$MaLL_mi$t4ke_big_con$3qU3ncES}
+
+files:
+  - shell.sh
+
+state: visible
+
+version: "0.1"

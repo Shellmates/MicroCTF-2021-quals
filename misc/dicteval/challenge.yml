@@ -1,0 +1,32 @@
+name: "dicteval"
+author: "chenx3n"
+
+category: misc
+difficulty: ezmed
+
+description: |
+  > Can you dicteval the flag out?  
+
+  **Author** : chenx3n
+
+connection_info: nc misc.ctf.microclub.net 4000
+
+image: gcr.io/i-pivot-325521/dicteval
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{9286a596f6a2b68bfd4eae4e4d0d6f10}
+
+files:
+  - ./challenge/challenge.py
+
+state: visible
+
+version: "0.1"

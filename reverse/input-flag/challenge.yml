@@ -1,0 +1,27 @@
+name: "input flag"
+author: "chenx3n"
+author_link: "https://github.com/malikDaCoda"
+
+category: reverse
+difficulty: easy
+
+description: |
+  > Can you help me pass the right input to get the flag ?  
+
+  **Author** : chenx3n
+
+value: 50
+type: standard
+
+flags:
+  - shellmates{l3t$_St4Rt_R3vErS1Ng_FOR_RE4L_NoW}
+
+files:
+  - ./challenge/chal
+
+tags:
+  - warmup
+
+state: visible
+
+version: "0.1"

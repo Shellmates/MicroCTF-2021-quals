@@ -1,0 +1,32 @@
+name: "ordeval"
+author: "chenx3n"
+
+category: misc
+difficulty: medium
+
+description: |
+  > Can you ordeval the flag out?  
+
+  **Author** : chenx3n
+
+connection_info: nc misc.ctf.microclub.net 4001
+
+image: gcr.io/i-pivot-325521/ordeval
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{3dfd4eab386877d53c6eed6983c0966b}
+
+files:
+  - ./challenge/challenge.py
+
+state: visible
+
+version: "0.1"

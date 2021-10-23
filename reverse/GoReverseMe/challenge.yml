@@ -1,0 +1,29 @@
+name: "GoReverseMe"
+author: "hfz1337"
+
+category: reverse
+difficulty: medium
+
+description: |
+  > According to our super secret sources, someone encrypted the flag with the attached binary and produced the following output:
+  > `RfAh5ZALWb3UmMkHzalgKwOqIL6fAwr_g9PUB5ykZ31V-3btnVEIrYOKgFSb_DIpVawmsZpVWqiE3NZWnvhnewOufL_OAw391Y6ATQ==:D854huw6UpZCzm66-kzddgUz1WV0nDwZ2h0WLZ6l-cAX2u50AW5VqK0f5D6sFcJT`
+  > Can you recover the flag? You *GO*t this, we believe in you.
+  **Author**: hfz1337
+
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 15
+  minimum: 50
+
+flags:
+  - shellmates{724d352d7ce2628f7c9cecc2da70d2a2dda61c4b8f3ba57dfaecc56862e54de2}
+
+files:
+  - ./goreverseme
+
+state: visible
+
+version: "0.1"
