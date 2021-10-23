@@ -9,7 +9,7 @@ if data == [1337, 1337.0, '1337', b'1337']:
       return render_template("index.html", flag=FLAG)
 ```
 
-- But the problem now is that you need to provide a signature (md5 hash) of the serialized payload which is given when use the `Serialize` function
+- But the problem now is that you need to provide a signature (md5 hash) of the serialized payload which is given when web use the `Serialize` function
 
 - The md5 signature is computed as the following : `md5(KEY || serialized)`, where `KEY` is a secret key of length 12 and `serialized` is our serialized object (python string in our case)
 
@@ -36,7 +36,7 @@ def strip_pickle(p):
 KEY_LENGTH = 12
 data_to_add = pickle.dumps([1337, 1337.0, '1337', b'1337'])
 known_data = strip_pickle(pickle.dumps('A'))
-# from http://secure-serializer.web.ctf.microclub.net/serialize
+# from http://secure-serializer.web.ctf.microclub.net
 signature = '27d24f35442f0ca2cc4aa0fb3df5370b'
 
 result = hashpump(signature, known_data, data_to_add, KEY_LENGTH)
@@ -49,7 +49,7 @@ print(new_hexdata)
 # 5801000000417100800000000000000000000000000000000000000000000000000000000000000000000000a00000000000000080035d7100284d3905474094e4000000000058040000003133333771014304313333377102652e
 ```
 
-- When we pass those respective values we get a deserialization error instead of an invalid signature error, that means the hash lenght extension succeeded but the new payload cannot be deserialized by pickle
+- When we pass those respective values we get a deserialization error instead of an invalid signature error, that means the hash length extension succeeded but the new payload cannot be deserialized by pickle
 
 - To further investigate why it can't be deserialized, let's check locally with pickle.loads :
 
@@ -82,6 +82,7 @@ def strip_pickle(p):
 
 KEY_LENGTH = 12
 data_to_add = pickle.dumps([1337, 1337.0, '1337', b'1337'])
+# 36 looks like the perfect number to minimize the number of null bytes
 known_data = strip_pickle(pickle.dumps('A' * 36))
 # from http://secure-serializer.web.ctf.microclub.net/serialize
 signature = '4d87d766b6183960c21c7c7179a86102'
@@ -112,7 +113,7 @@ print(pickle.loads(p))
 
 - Since the block size for md5 is 64, we can keep minimizing the number of null bytes by having payloads of length `36 + 64 * X` where `X` is an integer we have control over
 
-- And the reason that is important to mention is that since we control the bit length block by changing the length of our payload, we should try finding a valid `X` so that the bit length bytes are valid pickle deserialization instructions
+- And the reason why that is important to mention is that since we control the bit length block by changing the length of our payload, we should try finding a valid `X` so that the bit length bytes are valid pickle deserialization instructions
 
 - After some research about [pickle instructions](https://github.com/python/cpython/blob/main/Lib/pickle.py), we find the following instruction :
 
